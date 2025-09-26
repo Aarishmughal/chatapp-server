@@ -4,7 +4,7 @@
     "description": "A simple chatapp to practice Sockets",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon ./src/server.js"
+        "start": "node ./src/server.js"
     },
     "author": "Aarish",
     "license": "ISC",
