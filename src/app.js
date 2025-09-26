@@ -12,12 +12,13 @@ if (process.env.NODE_ENV === "development") {
     app.use(morgan("dev"));
 }
 app.use(
-    cors({
-        origin: true,
-        credentials: true,
-        methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-        allowedHeaders: ["Content-Type", "Authorization"],
-    })
+    cors()
+    // {
+    // origin: true,
+    // credentials: true,
+    // methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    // allowedHeaders: ["Content-Type", "Authorization"],
+    // }
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
